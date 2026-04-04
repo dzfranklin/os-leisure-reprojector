@@ -4,11 +4,11 @@ Description=OS Leisure Reprojector
 [Container]
 Image=ghcr.io/dzfranklin/os-leisure-reprojector:latest
 ContainerName=os-leisure-reprojector
-Network=plantopo.network
+Network=internal.network
 
-Environment=OS_API_KEY=your-api-key-here
+EnvironmentFile=%h/.config/containers/env/os-leisure-reprojector.env
 
-Volume=os-leisure-reprojector-cache.volume:/mapproxy/cache
+Volume=os-leisure-reprojector-cache.volume:/cache_data
 
 [Service]
 Restart=always

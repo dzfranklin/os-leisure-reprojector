@@ -1,3 +1,5 @@
 *
 !mapproxy_template.yaml
 !entrypoint.sh
+!scripts/
+!uwsgi.ini

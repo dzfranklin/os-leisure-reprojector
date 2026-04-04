@@ -3,7 +3,7 @@
 
 globals:
   cache:
-    base_dir: /mapproxy/cache
+    base_dir: /cache_data
     meta_buffer: 0
   image:
     resampling_method: bilinear
