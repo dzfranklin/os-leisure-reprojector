@@ -4,7 +4,7 @@ Description=OS Leisure Reprojector
 [Container]
 Image=ghcr.io/dzfranklin/os-leisure-reprojector:latest
 ContainerName=os-leisure-reprojector
-Network=internal.network
+PublishPort=3012:8080
 
 EnvironmentFile=%h/.config/containers/env/os-leisure-reprojector.env
 
